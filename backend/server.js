@@ -20,6 +20,8 @@ app.use(express.json());
 // Routes
 app.use('/auth', require('./routes/auth'));
 app.use('/users', require('./routes/users'));
+app.use('/conversations', require('./routes/conversations'));
+
 
 // Simple error handler
 app.use((err, req, res, next) => {
